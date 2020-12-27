@@ -1,0 +1,50 @@
+{% load static %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="nav_pythoneer" style="background-color: #000!important;padding : 0px">
+    <div class="container flex-row">
+  <a class="navbar-brand" href="/" style="margin-right : 0rem">
+      <img src="{% static 'images/logo_b.png' %}" alt="thePythoneer.tech" style="max-width : 70%;margin-left : -5%"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size : 1.2em">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" style="margin-right : 2rem">
+        <a class="nav-link active" href="#"><i class="fas fa-search"></i></a>
+      </li>
+      <li class="nav-item" style="margin-right : 2rem">
+        <a class="nav-link active" href="#">Begin Now</a>
+      </li>
+      <li class="nav-item dropdown active" style="margin-right : 2rem">
+        <a class="nav-link dropdown-toggle" href="#" id="LEARNnavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fab fa-python"></i> For Pythoneers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="LEARNnavbarDropdown" style="background-color : #000">
+          <a class="dropdown-item" href="#">
+            <div class="row">
+                <div class="col-12" style="color : #ff8800">
+                    <i class="fas fa-graduation-cap"></i> Python Tutorials <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="col-12" style="color : #fff">
+                    Learn Python using article
+                </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active" style="margin-right : 2rem">
+        <a class="nav-link dropdown-toggle" href="#" id="MOREnavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="MOREnavbarDropdown" style="background-color : #000;">
+          <a class="dropdown-item" href="#" style="color : #fff" >Python Newsletter</a>
+          <a class="dropdown-item" href="#" style="color : #fff">Our Team</a>
+          <div class="dropdown-divider" style="color : #fff"></div>
+          <a class="dropdown-item" href="#" style="color : #fff">Become a Blog Author</a>
+          <a class="dropdown-item" href="#" style="color : #fff">Become a Video Tutorial Author</a>
+          <div class="dropdown-divider" style="color : #fff"></div>
+          <a class="dropdown-item" href="#" style="color : #fff">Our Team</a>
+        </div>
+      </li>
+    </ul>

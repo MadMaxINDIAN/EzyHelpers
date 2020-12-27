@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% block content %}
+    <br/>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="7aeEJUUf"></script>
+    <div class="row">
+        <div class="col-9 col-md-8 col-sm-12 text-left">
+<!--            We have to insert dynamic link for image-->
+            <img style="height: 450px; margin-bottom: 10px" class="rounded" src="{{ post.image.url }}" />
+            <h2><b>{{ post.title }}</b></h2>
+            <p style="color: #555"><b><i class="fas fa-user-edit"></i>
+                by {{ post.author }}
+                &emsp; <i class="fas fa-clock"></i> {{ post.date_posted }}
+                &emsp; <i class="fas fa-tags"></i>
+                {% for i in tags %}
+                <span style="background-color: #eee;border-radius: 2px; padding : 2 px 8px;">{{ i }}</span>
+                {% endfor %}
+                &emsp; <i class="fas fa-star-half-alt"></i> {{ post.ratings }}
+            </b></p>
+            <h4><b>{{ post.sub_title }}</b></h4>
+            {% autoescape off %}
+            <div style="margin: 20px 0px"><p> {{ post.content }} </p></div>
+            {% endautoescape %}
+        </div>
+        <aside class="col-3 col-md-4 col-sm-12"></aside>
+    </div>
+{% endblock content %}
